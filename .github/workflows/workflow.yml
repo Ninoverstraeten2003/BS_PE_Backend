@@ -47,14 +47,8 @@ jobs:
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
-
-      
-
-
-
-      
-
-   
-
-
-  
+        
+      - name: Webhook
+        run: |
+          curl -X POST "http://193.191.176.110:9000/api/webhooks/b6a84bcf-d263-4821-aee6-382058ff009b"
+        
