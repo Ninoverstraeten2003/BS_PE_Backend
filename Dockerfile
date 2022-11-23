@@ -1,4 +1,5 @@
 FROM maven:3-openjdk-18 AS BUILD
+LABEL org.opencontainers.image.source="https://github.com/Ninoverstraeten2003/BS_PE_Backend"
 COPY pom.xml /tmp/
 COPY src /tmp/src/
 WORKDIR /tmp/

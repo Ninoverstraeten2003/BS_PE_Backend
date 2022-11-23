@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Build and Push to Dockerhub
+    name: Build and Push to GHCR
     runs-on: ubuntu-latest
     steps:
 
@@ -42,7 +42,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.GHCR_USERNAME }}/pebackend:latest
+          tags: ghcr.io/${{ secrets.GHCR_USERNAME }}/bs_pe_backend:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
