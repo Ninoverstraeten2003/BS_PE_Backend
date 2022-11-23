@@ -51,5 +51,4 @@ jobs:
         
       - name: Webhook
         run: |
-          curl -X POST "http://193.191.176.110:9000/api/webhooks/b6a84bcf-d263-4821-aee6-382058ff009b"
-          
+          curl -X POST "http://193.191.176.110:9000/api/webhooks/14f2e203-83f6-4a33-afd2-f7e9dfe2aaf6"
